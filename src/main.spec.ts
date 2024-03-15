@@ -31,4 +31,12 @@ describe("Mars rover kata", () => {
 
     expect(position).toEqual("0:2:N")
   })
+
+  it("should manage vertical grid overflow", () => {
+    const marsRover = new MarsRover()
+
+    const position = marsRover.execute("MMMMMMMMMM")
+
+    expect(position).toEqual("0:0:N")
+  })
 })
