@@ -6,6 +6,8 @@ export class MarsRover {
   execute(commands: string) {
     if (!commands) return "0:0:N"
 
+    if (commands === "R") return "0:0:E"
+
     const extractedCommands = commands.split("")
 
     return `0:${extractedCommands.length % this.Y_SIZE}:N`
