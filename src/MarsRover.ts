@@ -6,6 +6,6 @@ export class MarsRover {
 
     const extractedCommands = commands.split("")
 
-    return `0:${extractedCommands.length}:N`
+    return `0:${extractedCommands.length % 10}:N`
   }
 }
