@@ -39,4 +39,12 @@ describe("Mars rover kata", () => {
 
     expect(position).toEqual("0:0:N")
   })
+
+  it("should rotate right to face to east", () => {
+    const marsRover = new MarsRover()
+
+    const position = marsRover.execute("R")
+
+    expect(position).toEqual("0:0:E")
+  })
 })
