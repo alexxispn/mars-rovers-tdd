@@ -16,11 +16,19 @@ describe("Mars rover kata", () => {
     expect(position).toEqual("0:0:N")
   })
 
-  it("should calculate position when moving", () => {
+  it("should calculate position when moving once", () => {
     const marsRover = new MarsRover()
 
     const position = marsRover.execute("M")
 
     expect(position).toEqual("0:1:N")
+  })
+
+  it("should calculate position when moving twice", () => {
+    const marsRover = new MarsRover()
+
+    const position = marsRover.execute("MM")
+
+    expect(position).toEqual("0:2:N")
   })
 })
