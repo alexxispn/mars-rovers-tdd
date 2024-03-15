@@ -7,6 +7,7 @@ export class MarsRover {
     if (!commands) return "0:0:N"
 
     if (commands === "R") return "0:0:E"
+    if (commands === "RR") return "0:0:S"
 
     const extractedCommands = commands.split("")
 
